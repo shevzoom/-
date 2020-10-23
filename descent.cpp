@@ -1,3 +1,4 @@
+// Метод градиента для минимизации функции двух переменных: x1 - 4*x2^2 + sin(x1-x2)
 #include<iostream>
 #include<math>
 
@@ -34,6 +35,7 @@ double n(double x1,double x2) {
     return sqrt(pow(gk1(x1,x2),2)+pow(gk2(x1,x2),2));
 }
 
+// Находим правую границу, когда ...>f(0)
 double section(double x1,double x2,double h) {
     int a = 0;
     double fa = fs(x1,x2,a);
@@ -46,6 +48,7 @@ double section(double x1,double x2,double h) {
     return h;
 }
 
+// Метод золотого сечения
 double min(double x1,double x2, double B) {
     double A = 0, eps = 0.000001;
     double l = (1 + pow(5,0.5)) / 2;

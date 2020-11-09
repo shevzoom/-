@@ -1,6 +1,6 @@
 // Метод градиента для минимизации функции двух переменных: x1 - 4*x2^2 + sin(x1-x2)
 #include<iostream>
-#include<math>
+#include<cmath>
 
 using namespace std;
 
